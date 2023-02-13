@@ -20,6 +20,13 @@
   },
   "homepage": "https://github.com/wahinya/Na_re_po#readme",
   "devDependencies": {
-    "cypress": "^12.5.1"
+    "cypress": "^12.5.1",
+    "cypress-xpath": "^2.0.1",
+    "eslint": "^8.33.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "faker": "^5.5.3",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
   }
 }
