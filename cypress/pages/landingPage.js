@@ -12,6 +12,17 @@ const submitcustomerbtn = locators.submitcustomerbtn;
 const selectcustomer = locators.selectcustomer
 const selectcurrency = locators.selectcurrency
 const processbtn= locators.processbtn
+const loginbtn = locators.loginbtn
+const accnolabel = locators.accnolabel
+const transactionsbtn = locators.transactionsbtn
+const depositbtn = locators.depositbtn
+const depositamount = locators.depositamount
+const submitdepositbtn = locators.submitdepositbtn
+const withdrawbtn = locators.withdrawbtn
+const withdrawamount = locators.withdrawamount
+const submitwithdraw = locators.submitwithdraw
+
+
 
 export class landingPage{
 navigate(pageURL){
@@ -36,4 +47,25 @@ openNewBankAccount(){
  cy.xpath(selectcurrency).select("Dollar");
  cy.xpath(processbtn).click();
 
-}}
+}
+
+//customer 
+loginAsCustomer(){
+    cy.xpath(customerbtn).click();
+    cy.xpath(selectcustomer).select("duncan wahinya");
+    cy.xpath(loginbtn).click();
+}
+verifyAccountNumber(customerAccountNumber){
+    cy.xpath(accnolabel).should('have.text' , customerAccountNumber)
+}
+performDepositTransaction(amount){
+    cy.xpath(depositbtn).click()
+    cy.xpath(depositamount).type(amount)
+    cy.xpath(submitdepositbtn).click()
+}
+performWithdrawTransaction(amount){
+    cy.xpath(withdrawbtn).click()
+    cy.xpath(withdrawamount).type(amount)
+    cy.xpath(submitwithdraw).click()
+}
+}
