@@ -1,0 +1,25 @@
+{
+  "name": "na_re_po",
+  "version": "1.0.0",
+  "description": "na_re_po interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "test narepo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahinya/Na_re_po.git"
+  },
+  "keywords": [
+    "narepo"
+  ],
+  "author": "duncan wahinya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahinya/Na_re_po/issues"
+  },
+  "homepage": "https://github.com/wahinya/Na_re_po#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  }
+}
