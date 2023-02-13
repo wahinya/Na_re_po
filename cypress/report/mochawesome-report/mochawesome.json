@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-13T17:57:44.096Z",
+    "end": "2023-02-13T17:57:54.032Z",
+    "duration": 9936,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4efd0f91-4ee9-4443-800b-d7ba0ed44c1d",
+      "title": "",
+      "fullFile": "cypress/e2e/login_as_bankmanager_to_addCustomer.cy.js",
+      "file": "cypress/e2e/login_as_bankmanager_to_addCustomer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "346063c2-ef17-48c6-963a-76d7702b4f7f",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login as a manager",
+              "fullTitle": "template spec login as a manager",
+              "timedOut": null,
+              "duration": 4741,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.loginAsManager();",
+              "err": {},
+              "uuid": "9df06754-16d2-415b-8a5b-550278584686",
+              "parentUUID": "346063c2-ef17-48c6-963a-76d7702b4f7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open customer form",
+              "fullTitle": "template spec open customer form",
+              "timedOut": null,
+              "duration": 111,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.openCustomerForm();",
+              "err": {},
+              "uuid": "71d8d435-ae25-4087-81c8-a658f133246d",
+              "parentUUID": "346063c2-ef17-48c6-963a-76d7702b4f7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "add new customer details ",
+              "fullTitle": "template spec add new customer details ",
+              "timedOut": null,
+              "duration": 1193,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.addCustomerDetails();",
+              "err": {},
+              "uuid": "09aa303a-978a-405f-9efb-c2969497da6b",
+              "parentUUID": "346063c2-ef17-48c6-963a-76d7702b4f7f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "open a new bank account for the customer ",
+              "fullTitle": "template spec open a new bank account for the customer ",
+              "timedOut": null,
+              "duration": 818,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.openNewBankAccount();",
+              "err": {},
+              "uuid": "6eb9910c-073d-4bc2-afb8-edc82aca7e4f",
+              "parentUUID": "346063c2-ef17-48c6-963a-76d7702b4f7f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9df06754-16d2-415b-8a5b-550278584686",
+            "71d8d435-ae25-4087-81c8-a658f133246d",
+            "09aa303a-978a-405f-9efb-c2969497da6b",
+            "6eb9910c-073d-4bc2-afb8-edc82aca7e4f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6863,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
