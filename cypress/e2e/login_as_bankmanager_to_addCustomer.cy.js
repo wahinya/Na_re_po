@@ -1,6 +1,6 @@
 import { landingPage } from "../pages/landingPage"
 
-describe('template spec', { testIsolation: false },() => {
+describe('Login as a bank manager to add customer and add a bank accoubnt to the customer', { testIsolation: false },() => {
   const page = new landingPage()
   before(() => {
     page.navigate(Cypress.env('base'))

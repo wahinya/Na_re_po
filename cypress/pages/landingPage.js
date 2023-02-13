@@ -21,6 +21,9 @@ const submitdepositbtn = locators.submitdepositbtn
 const withdrawbtn = locators.withdrawbtn
 const withdrawamount = locators.withdrawamount
 const submitwithdraw = locators.submitwithdraw
+const customersbtn = locators.customersbtn
+const searchcustomer = locators.searchcustomer
+const deletebtn = locators.deletebtn
 
 
 
@@ -67,5 +70,15 @@ performWithdrawTransaction(amount){
     cy.xpath(withdrawbtn).click()
     cy.xpath(withdrawamount).type(amount)
     cy.xpath(submitwithdraw).click()
+}
+deleteCustomer(customer){
+    cy.xpath(customersbtn).click()
+    cy.xpath(searchcustomer).type(customer)
+    cy.xpath(deletebtn).click()
+//     cy.contains('Delete Customer')
+//   .parent('tr')
+//   .within(() => {
+//     cy.get('td').eq(1).contains('button', 'Delete').click()
+//   })
 }
 }

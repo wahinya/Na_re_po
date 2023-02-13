@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-02-13T18:43:22.415Z",
+    "end": "2023-02-13T18:43:37.048Z",
+    "duration": 14633,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9fd2c3d6-cdaf-4d11-915a-10fa88c97cf9",
+      "title": "",
+      "fullFile": "cypress/e2e/login_as_bankManager_to_delete_customer.cy.js",
+      "file": "cypress/e2e/login_as_bankManager_to_delete_customer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "597a9518-972a-44e8-9537-9df7556a3fa4",
+          "title": "login as a bank manager to delete an existing customer ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login as a manager",
+              "fullTitle": "login as a bank manager to delete an existing customer  login as a manager",
+              "timedOut": null,
+              "duration": 5285,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.loginAsManager();",
+              "err": {},
+              "uuid": "9f419022-4e7f-4714-991f-18ff444196c3",
+              "parentUUID": "597a9518-972a-44e8-9537-9df7556a3fa4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deletes a customer",
+              "fullTitle": "login as a bank manager to delete an existing customer  deletes a customer",
+              "timedOut": null,
+              "duration": 5773,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var customer = \"duncan\";\npage.deleteCustomer(customer);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `/html/body/div/div/div[2]/div/div[2]/div/div/table/tbody/tr/td[5]/button`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `/html/body/div/div/div[2]/div/div[2]/div/div/table/tbody/tr/td[5]/button`, but never found it.\n    at landingPage.deleteCustomer (webpack:///./cypress/pages/landingPage.js:77:7)\n    at Context.eval (webpack:///./cypress/e2e/login_as_bankManager_to_delete_customer.cy.js:13:9)",
+                "diff": null
+              },
+              "uuid": "b409ac43-d75e-44b2-98ac-2bae4fc7c69f",
+              "parentUUID": "597a9518-972a-44e8-9537-9df7556a3fa4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f419022-4e7f-4714-991f-18ff444196c3"
+          ],
+          "failures": [
+            "b409ac43-d75e-44b2-98ac-2bae4fc7c69f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11058,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -19,5 +19,8 @@ module.exports={
     withdrawamount: '/html/body/div/div/div[2]/div/div[4]/div/form/div/input',
     submitwithdraw:'/html/body/div/div/div[2]/div/div[4]/div/form/button',
     withdrawbtn:'/html/body/div/div/div[2]/div/div[3]/button[3]',
+    customersbtn: '/html/body/div/div/div[2]/div/div[1]/button[3]',
+    searchcustomer: '/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input',
+    deletebtn: '/html/body/div/div/div[2]/div/div[2]/div/div/table/tbody/tr/td[5]/button'
 
 }

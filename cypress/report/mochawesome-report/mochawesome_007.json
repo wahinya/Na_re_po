@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-13T18:45:03.225Z",
+    "end": "2023-02-13T18:45:10.600Z",
+    "duration": 7375,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a795e2b8-4393-4d07-ade2-115e0555ab1e",
+      "title": "",
+      "fullFile": "cypress/e2e/login_as_the_cutomer_to_performTransactions.cy.js",
+      "file": "cypress/e2e/login_as_the_cutomer_to_performTransactions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c56a9b07-1343-4b26-bdb6-60fa634d6ec7",
+          "title": "login as customer to perform deposit /withdraw transactions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login as a customer",
+              "fullTitle": "login as customer to perform deposit /withdraw transactions login as a customer",
+              "timedOut": null,
+              "duration": 3151,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.loginAsCustomer();",
+              "err": {},
+              "uuid": "b7f09647-a576-4336-b1ad-eb61c0e75c4d",
+              "parentUUID": "c56a9b07-1343-4b26-bdb6-60fa634d6ec7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifies the account number",
+              "fullTitle": "login as customer to perform deposit /withdraw transactions verifies the account number",
+              "timedOut": null,
+              "duration": 390,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "page.verifyAccountNumber(\"1016 \");",
+              "err": {},
+              "uuid": "ec57a777-a275-42fe-aede-5f39bcf14f1c",
+              "parentUUID": "c56a9b07-1343-4b26-bdb6-60fa634d6ec7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "perform deposit transaction",
+              "fullTitle": "login as customer to perform deposit /withdraw transactions perform deposit transaction",
+              "timedOut": null,
+              "duration": 750,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var depositamount = 10000;\npage.performDepositTransaction(depositamount);",
+              "err": {},
+              "uuid": "d6ad2535-8e8a-43a9-bbe3-f65cf2baa360",
+              "parentUUID": "c56a9b07-1343-4b26-bdb6-60fa634d6ec7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "perform withdraw transaction",
+              "fullTitle": "login as customer to perform deposit /withdraw transactions perform withdraw transaction",
+              "timedOut": null,
+              "duration": 397,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var withdrawamount = 5000;\npage.performWithdrawTransaction(withdrawamount);",
+              "err": {},
+              "uuid": "dfe36530-04e8-4998-b6b0-40bea393937f",
+              "parentUUID": "c56a9b07-1343-4b26-bdb6-60fa634d6ec7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b7f09647-a576-4336-b1ad-eb61c0e75c4d",
+            "ec57a777-a275-42fe-aede-5f39bcf14f1c",
+            "d6ad2535-8e8a-43a9-bbe3-f65cf2baa360",
+            "dfe36530-04e8-4998-b6b0-40bea393937f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4688,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
